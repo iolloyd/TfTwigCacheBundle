@@ -1,11 +1,15 @@
 ### Installation ###
 
 Add following to composer.json
+
 	"toyfoundry/twigcache-bundle": "dev-master"
+
 run
+
 	php composer.phar update toyfoundry/twigcache-bundle
 
 add to AppKernel.php
+
 	 new ToyFoundry\TwigCacheBundle\TfTwigCacheBundle(),
 
 ### Configuration ###
