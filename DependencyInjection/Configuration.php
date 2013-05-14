@@ -22,6 +22,8 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('memcached_servers')
+                    ->isRequired()
+                    ->requiresAtLeastOneElement()
                     ->prototype('array')
                     ->children()
                         ->scalarNode('host')->end()
