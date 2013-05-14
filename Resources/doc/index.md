@@ -14,6 +14,7 @@ add to AppKernel.php
 
 ### Configuration ###
 Add following to your config.yml
+
 	tf_twig_cache:
     	memcached_servers:
         	- {host: '127.0.0.1', port: 11211}
