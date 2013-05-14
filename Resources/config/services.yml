@@ -1,0 +1,22 @@
+services:
+#    tf_twig_cache.example:
+#        class: %tf_twig_cache.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    tf.twig.memcached:
+        class: Memcached
+
+    tf.twig.memcached_provider:
+        class: Tf\TwigCacheBundle\Twig\CacheExtension\CacheProvider\MemcachedCacheProvider
+        arguments: [@tf.twig.memcached]
+        calls:
+            - [ addServers, [ %tf_twig_cache.memcached_servers% ] ]
+
+    tf.twig.lifetime_cache_strategy:
+        class: Tf\TwigCacheBundle\Twig\CacheExtension\CacheStrategy\LifetimeCacheStrategy
+        arguments: [@tf.twig.memcached_provider]
+
+    tf.twig.cache_extension:
+        class: Tf\TwigCacheBundle\Twig\CacheExtension\Extension
+        arguments: [@tf.twig.lifetime_cache_strategy]
+        tags:
+            - { name: twig.extension }
