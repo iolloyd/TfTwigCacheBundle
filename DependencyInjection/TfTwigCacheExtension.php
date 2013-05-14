@@ -1,6 +1,6 @@
 <?php
 
-namespace Tf\TwigCacheBundle\DependencyInjection;
+namespace ToyFoundry\TwigCacheBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension\CacheStrategy;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheStrategy;
 
-use Tf\TwigCacheBundle\Twig\CacheExtension\CacheProviderInterface;
-use Tf\TwigCacheBundle\Twig\CacheExtension\CacheStrategyInterface;
+use ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheProviderInterface;
+use ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheStrategyInterface;
 
 /**
  * Strategy for generational caching.

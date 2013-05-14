@@ -6,17 +6,17 @@ services:
         class: Memcached
 
     tf.twig.memcached_provider:
-        class: Tf\TwigCacheBundle\Twig\CacheExtension\CacheProvider\MemcachedCacheProvider
+        class: ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheProvider\MemcachedCacheProvider
         arguments: [@tf.twig.memcached]
         calls:
             - [ addServers, [ %tf_twig_cache.memcached_servers% ] ]
 
     tf.twig.lifetime_cache_strategy:
-        class: Tf\TwigCacheBundle\Twig\CacheExtension\CacheStrategy\LifetimeCacheStrategy
+        class: ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheStrategy\LifetimeCacheStrategy
         arguments: [@tf.twig.memcached_provider]
 
     tf.twig.cache_extension:
-        class: Tf\TwigCacheBundle\Twig\CacheExtension\Extension
+        class: ToyFoundry\TwigCacheBundle\Twig\CacheExtension\Extension
         arguments: [@tf.twig.lifetime_cache_strategy]
         tags:
             - { name: twig.extension }

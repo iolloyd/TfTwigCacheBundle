@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension\CacheProvider;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheProvider;
 
-use Tf\TwigCacheBundle\Twig\CacheExtension\CacheProviderInterface;
+use ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheProviderInterface;
 
 /**
  * Adapter class to use the cache classes provider by Doctrine.

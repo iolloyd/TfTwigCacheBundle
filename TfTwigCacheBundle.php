@@ -1,6 +1,6 @@
 <?php
 
-namespace Tf\TwigCacheBundle;
+namespace ToyFoundry\TwigCacheBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

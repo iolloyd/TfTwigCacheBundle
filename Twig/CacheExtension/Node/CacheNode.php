@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension\Node;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension\Node;
 
 /**
  * Cache twig node.

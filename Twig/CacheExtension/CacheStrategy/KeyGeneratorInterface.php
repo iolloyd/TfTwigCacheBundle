@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension\CacheStrategy;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheStrategy;
 
 /**
  * Generates a key for a given value.

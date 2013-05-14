@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension\TokenParser;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension\TokenParser;
 
 use \Twig_Token;
 
@@ -51,6 +51,6 @@ class Cache extends \Twig_TokenParser
         $body = $this->parser->subparse(array($this, 'decideCacheEnd'), true);
         $stream->expect(Twig_Token::BLOCK_END_TYPE);
 
-        return new \Tf\TwigCacheBundle\Twig\CacheExtension\Node\CacheNode($annotation, $key, $body, $lineno, $this->getTag());
+        return new \ToyFoundry\TwigCacheBundle\Twig\CacheExtension\Node\CacheNode($annotation, $key, $body, $lineno, $this->getTag());
     }
 }

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tf\TwigCacheBundle\Twig\CacheExtension;
+namespace ToyFoundry\TwigCacheBundle\Twig\CacheExtension;
 
 /**
  * Cache strategy interface.

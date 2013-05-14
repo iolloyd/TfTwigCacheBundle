@@ -1,6 +1,6 @@
 <?php
 
-namespace Tf\TwigCacheBundle\Tests\Controller;
+namespace ToyFoundry\TwigCacheBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
