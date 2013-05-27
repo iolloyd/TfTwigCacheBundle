@@ -126,6 +126,6 @@ class MemcachedCacheProvider implements CacheProviderInterface
      */
     public function save($key, $value, $lifetime = 0)
     {
-        return $this->cache->set($key, $value, $lifetime);
+        return $this->cache->set($key, $value, 0, $lifetime);
     }
 }
