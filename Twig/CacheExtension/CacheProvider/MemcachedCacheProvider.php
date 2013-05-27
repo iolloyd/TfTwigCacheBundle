@@ -108,7 +108,7 @@ class MemcachedCacheProvider implements CacheProviderInterface
     /**
      * @param Cache $cache
      */
-    public function __construct(\Memcached $memcached)
+    public function __construct(\Memcache $memcached)
     {
         $this->cache = $memcached;
     }

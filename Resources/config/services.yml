@@ -1,9 +1,6 @@
 services:
-#    tf_twig_cache.example:
-#        class: %tf_twig_cache.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
     tf.twig.memcached:
-        class: ToyFoundry\TwigCacheBundle\Lib\_Memcache
+        class: Memcache
 
     tf.twig.memcached_provider:
         class: ToyFoundry\TwigCacheBundle\Twig\CacheExtension\CacheProvider\MemcachedCacheProvider
