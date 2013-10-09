@@ -1,5 +1,3 @@
-[![Build Status](https://api.travis-ci.org/cvele/TfTwigCacheBundle.png?branch=master)](http://travis-ci.org/cvele/TfTwigCacheBundle)
-
 ### Installation ###
 
 Add following to composer.json
