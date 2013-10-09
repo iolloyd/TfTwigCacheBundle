@@ -1,0 +1,24 @@
+{
+    "name": "toyfoundry/twigcache-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle implementation of https://github.com/asm89/twig-cache-extension",
+    "keywords": ["twig cache","memcache","memcached","cache"],
+    "homepage": "http://www.toyfoundry.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Soy Vegan",
+            "email": "simon@toyfoundry.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*",
+        "ext-memcache": ">=3.0.7"
+    },
+    "autoload": {
+        "psr-0": { "ToyFoundry\\TwigCacheBundle": "" }
+    },
+    "target-dir": "ToyFoundry/TwigCacheBundle"
+}
